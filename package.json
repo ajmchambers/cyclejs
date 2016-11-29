@@ -37,7 +37,7 @@
     "unused-internal-link-all": ".scripts/symlink-to-each-other.sh",
     "setup": "npm install && npm run internal-install-all",
     "test": "node .scripts/npm-x-for-all-packages.js run lib && .scripts/npm-x-for-all-packages.js test",
-    "test-ci": "npm run setup && .scripts/npm-x-for-all-packages.sh run test-ci",
+    "test-ci": "npm install && .scripts/npm-x-for-all-packages.sh install && .scripts/npm-x-for-all-packages.sh run test-ci",
     "commit": "git-cz",
     "changelog": ".scripts/update-changelogs.js",
     "check-release": ".scripts/pre-check-release.sh",
