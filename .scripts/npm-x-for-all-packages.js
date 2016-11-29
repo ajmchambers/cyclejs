@@ -22,8 +22,8 @@ function handleError(error) {
 
 function runCommand(command) {
   return function runCommandIn(dir) {
-    console.log("> (" + dir + ")")
-    console.log("> npm " + command)
+    console.log('> (' + dir + ')')
+    console.log("> npm " + command + '\n')
     try {
       execSync(
         'npm ' + command, 

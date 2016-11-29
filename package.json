@@ -31,7 +31,7 @@
     "validate-commit-msg": "^2.6.1"
   },
   "scripts": {
-    "internal-install-all": ".scripts/npm-x-for-all-packages.sh install",
+    "internal-install-all": "node .scripts/npm-x-for-all-packages.js install",
     "unused-internal-link-all": ".scripts/symlink-to-each-other.sh",
     "setup": "npm install && npm run internal-install-all",
     "test": ".scripts/npm-x-for-all-packages.sh run lib && .scripts/npm-x-for-all-packages.sh test",
